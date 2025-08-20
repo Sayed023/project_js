@@ -30,7 +30,7 @@ location.href="login.html"
 
 document.getElementById("BacktoStore")?.addEventListener("click", () => {
   localStorage.removeItem(STORAGE.CURRENT_USER);
-location.href="../../../index.html"
+location.href="../index.html"
  // Redirect to login page after logout
 });
 
@@ -56,3 +56,4 @@ console.log(fileName);
     showOrders(USER_ID);
   }
 });
+
