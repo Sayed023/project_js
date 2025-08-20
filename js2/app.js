@@ -279,7 +279,7 @@ console.log("Auth module loaded");
         const { id, role } = registerUser({ name, email, password, role: 'customer' });
         // Auto-login after register
         setCurrentUserSummary({ id, role });
-        window.location.href = 'index.html';
+        window.location.href = 'login.html';
       } catch (err) {
         showErrors(errorBox, err.message || 'An unexpected error occurred during registration');
       }
@@ -395,3 +395,4 @@ console.log("Auth module loaded");
    
 
 })();
+
