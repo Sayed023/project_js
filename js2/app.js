@@ -196,7 +196,7 @@ console.log("Auth module loaded");
     }
     if (role && current.role !== role) {
       // redirect to their dashboard
-      window.location.href = current.role === 'admin' ? '/project/project/admin/product.html' : 'index.html';
+      window.location.href = current.role === 'admin' ? '/admin/product.html' : 'index.html';
       return false;
     }
     return true;
@@ -241,7 +241,7 @@ console.log("Auth module loaded");
       try {
         const { id, role } = loginUser(email, password); // returns {id, role}
         // redirect based on role
-        window.location.href = role === 'admin' ? '/project/project/admin/product.html' : 'index.html';
+        window.location.href = role === 'admin' ? '/admin/product.html' : 'index.html';
       } catch (err) {
         showErrors(errorBox, err.message || 'Unexpected error occurred');
       }
@@ -393,4 +393,5 @@ console.log("Auth module loaded");
 
     };
    
+
 })();
