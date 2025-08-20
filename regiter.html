@@ -40,30 +40,32 @@
       </div>
     </nav>
 
-    <div class="form-container">
+
+ <div class="container d-flex justify-content-center align-items-center">
+    <div class="card p-4 mt-5 m-md-5 w-75 shadow border-0">
       
-     <h1>Create Customer Account</h1>
+     <h1 class="text-center">Create Customer Account</h1>
   <div id="registerError" class="alert" role="alert"></div>
 
   <form id="registerForm" novalidate>
-    <label>
+    <label class="form-label">
       Name
-      <input type="text" id="regName" required />
+      <input class="form-control shadow-none" type="text" id="regName" required />
     </label>
 
-    <label>
+    <label class="form-label">
       Email
-      <input type="email" id="regEmail" required />
+      <input class="form-control shadow-none" type="email" id="regEmail" required />
     </label>
 
-    <label>
+    <label class="form-label">
       Password
-      <input type="password" id="regPassword" required />
+      <input class="form-control shadow-none" type="password" id="regPassword" required />
     </label>
 
-    <label>
+    <label class="form-label">
       Confirm password
-      <input type="password" id="regConfirm" required />
+      <input class="form-control shadow-none" type="password" id="regConfirm" required />
     </label>
 
     <button class = "btn btn-primary w-100" type="submit">Sign up</button>
@@ -71,7 +73,10 @@
 
   <p class="muted">Already have an account? <a href="login.html">Sign in</a></p>
 
+  </div>
+  </div>
   <script type="module" src ="js2/app.js"></script>
     </div>
   </body>
 </html>
+
