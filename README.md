@@ -1,2 +1,2 @@
-# project_js
+# project
 website
